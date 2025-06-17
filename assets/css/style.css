@@ -1,0 +1,228 @@
+:root {
+  --bg-color: #f9fafb;
+  --text-color: #111827;
+  --accent-color: #4f46e5;
+}
+
+[data-theme="dark"] {
+  --bg-color: #0f172a;
+  --text-color: #f8fafc;
+  --accent-color: #6366f1;
+}
+body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #F9FAFB;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    gap: 2rem;
+}
+.navbar ul li{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.navbar ul li:hover{
+    color: #007bff;
+    transition: 0.3s;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+/*Dark Mode */
+.toggle-switch {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  --light: #d8dbe0;
+  --dark: #28292c;
+  --link: rgb(27, 129, 112);
+  --link-hover: rgb(24, 94, 82);
+}
+
+.switch-label {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background-color: var(--dark);
+  border-radius: 25px;
+  cursor: pointer;
+  border: 3px solid var(--dark);
+}
+
+.checkbox {
+  position: absolute;
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.checkbox:checked ~ .slider {
+  background-color: var(--light);
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 6px -2px 0px 0px var(--light);
+  box-shadow: inset 16px -7px 0px 0px var(--light);
+  background-color: var(--dark);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.checkbox:checked ~ .slider::before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+  background-color: var(--dark);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: #181818;
+    color: #f1f1f1;
+}
+
+body.dark-mode .navbar {
+    background: #222;
+}
+
+body.dark-mode .nav-right ul li a {
+    color: #f1f1f1;
+}
+
+body.dark-mode section,
+body.dark-mode .hero,
+body.dark-mode .hero-left {
+    background: transparent;
+    color: #f1f1f1;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode a {
+    color: #f1f1f1;
+}
+
+body.dark-mode .cta,
+body.dark-mode .resume {
+    background: #333;
+    color: #f1f1f1;
+    border: 1px solid #4f8cff;
+}
+
+body.dark-mode .cta:hover,
+body.dark-mode .resume:hover {
+    background: #4f8cff;
+    color: #fff;
+}
+
+/* Do NOT override toggle-switch design in dark mode */
+/*
+body.dark-mode .slider,
+body.dark-mode .checkbox:checked + .slider,
+body.dark-mode .slider:before {
+    background-color: initial !important;
+    color: initial !important;
+}
+*/
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.hero button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hero button:hover {
+    background-color: #0056b3;
+}
+.hero img {
+    display: flex;
+    max-width: 300px;
+    height: 300px;
+    margin-top: 2rem;
+    background-image: none;
+}
