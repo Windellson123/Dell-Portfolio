@@ -9,6 +9,9 @@
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
   <!--Tailwind CDN-->
   <script src="https://cdn.tailwindcss.com"></script>
   <!--script-->
@@ -34,6 +37,7 @@
         <li><a href="#about" class="hover:text-blue-600 dark:hover:text-blue-400 transition">About</a></li>
         <li><a href="#projects" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Projects</a></li>
         <li><a href="#skills" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Skills</a></li>
+        <li><a href="#contact" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Contact</a></li>
       </ul>
       <!-- Dark mode toggle -->
       <button id="toggle-theme"
@@ -73,7 +77,7 @@
   <section
     class="flex flex-col md:flex-row-reverse items-center justify-between px-4 h-screen py-12 bg-gradient-to-r from-blue-50 to-blue-100 dark:from-gray-800 dark:to-gray-900">
     <img src="assets/images/profile3.png" alt="My Image"
-      class="w-80 h-80 md:w-[36rem] md:h-[36rem] rounded-full object-cover mb-16 md:mb-0 md:mr-16">
+      class="w-80 h-80 md:w-[36rem] md:h-[36rem] rounded-full object-cover mb-16 md:mb-0 md:mr-16" data-aos="fade-up" data-aos-duration="1000">
     <div class="flex-1 lg:pl-24 mb-10 md:mb-12 md:mr-12">
       <h1 class="text-4xl md:text-5xl font-bold mb-4 text-blue-900 dark:text-blue-400">Hi, I’m Windellson Arellano 👋
       </h1>
@@ -109,7 +113,7 @@
 
   <!-- About -->
   <section id="about"
-    class="max-w-6xl mx-auto scroll-mt-20 px-10 py-16 bg-white dark:bg-gray-800 rounded-xl shadow mt-12">
+    class="max-w-6xl mx-auto scroll-mt-20 px-10 py-16 bg-white dark:bg-gray-800 rounded-xl shadow mt-12" data-aos="fade-up" data-aos-duration="1000">
     <h2 class="text-3xl font-semibold mb-6 text-blue-800 dark:text-blue-400 text-center">About Me</h2>
     <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
       <!-- Image on the left -->
@@ -205,23 +209,31 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="max-w-6xl mx-auto scroll-mt-20 px-8 py-8 mt-12">
+  <section id="projects" class="max-w-6xl mx-auto scroll-mt-20 px-8 py-8 mt-12" data-aos="fade-up" data-aos-duration="1000">
     <h2 class="text-3xl font-semibold mb-8 text-blue-800 dark:text-blue-400">Projects</h2>
     <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
-        <img src="assets/images/app_launcher_icon.jpeg" alt="Marketplace Project" class="w-full h-40 object-cover rounded mb-4 border-2 border-gray-200">
+        <img src="assets/images/app_launcher_icon.jpeg" alt="Marketplace Project"
+          class="w-full h-40 object-cover rounded mb-4 border-2 border-gray-200">
         <h3 class="text-blue-600 dark:text-blue-400 font-medium text-xl mb-2">Junkshop Marketplace</h3>
-        <p class="text-gray-600 dark:text-gray-300 mb-4">A mobile marketplace built with Flutterflow that makes buying and selling recyclables easier, connecting junkshop owners and customers in a simple, eco-friendly way.</p>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">A mobile marketplace built with Flutterflow that makes buying
+          and selling recyclables easier, connecting junkshop owners and customers in a simple, eco-friendly way.</p>
       </div>
       <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
-        <img src="assets/images/PESO_about1.png" alt="PESO Project" class="w-full h-40 object-cover rounded mb-4 border-2 border-gray-200">
+        <img src="assets/images/PESO_about1.png" alt="PESO Project"
+          class="w-full h-40 object-cover rounded mb-4 border-2 border-gray-200">
         <h3 class="text-blue-600 dark:text-blue-400 font-medium text-xl mb-2">PESO Job Seeker</h3>
-        <p class="text-gray-600 dark:text-gray-300 mb-4">A job-seeking platform developed with PHP and MySQL that connects applicants to opportunities through the Public Employment Service Office (PESO), providing a simple and accessible way to apply for jobs.</p>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">A job-seeking platform developed with PHP and MySQL that
+          connects applicants to opportunities through the Public Employment Service Office (PESO), providing a simple
+          and accessible way to apply for jobs.</p>
       </div>
       <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
-        <img src="assets/images/Port.png" alt="PESO Project" class="w-full h-40 object-cover rounded mb-4 border-2 border-gray-200">
+        <img src="assets/images/Port.png" alt="PESO Project"
+          class="w-full h-40 object-cover rounded mb-4 border-2 border-gray-200">
         <h3 class="text-blue-600 dark:text-blue-400 font-medium text-xl mb-2">My Portfolio</h3>
-        <p class="text-gray-600 dark:text-gray-300 mb-4">A user-friendly, and modern web applications. With experience in HTML, CSS, JavaScript, PHP, MySQL, and Tailwind CSS, I enjoy turning ideas into functional digital solutions while continuously learning new technologies to grow as a developer.</p>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">A user-friendly, and modern web applications. With experience
+          in HTML, CSS, JavaScript, PHP, MySQL, and Tailwind CSS, I enjoy turning ideas into functional digital
+          solutions while continuously learning new technologies to grow as a developer.</p>
       </div>
     </div>
     <div class="mt-4 px-8 py-16 bg-white dark:bg-gray-800 rounded-xl shadow">
@@ -276,7 +288,7 @@
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="max-w-5xl mx-auto scroll-mt-20 px-8 py-16">
+  <section id="skills" class="max-w-5xl mx-auto scroll-mt-20 px-8 py-16" data-aos="fade-up" data-aos-duration="1000">
     <h2 class="text-3xl font-semibold mb-12 text-center text-blue-800 dark:text-blue-400">⚡ Skills</h2>
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8"> <!-- HTML -->
       <div
@@ -333,7 +345,7 @@
   </section>
 
   <section id="contact" class="max-w-6xl mx-auto px-6 py-12 bg-gradient-to-br from-blue-50 to-blue-100 
-dark:from-gray-900 dark:to-gray-800 rounded-xl shadow-lg grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+dark:from-gray-900 dark:to-gray-800 rounded-xl shadow-lg grid grid-cols-1 md:grid-cols-2 gap-10 items-center" data-aos="fade-up" data-aos-duration="1000">
 
     <!-- Image (goes first on small screens, second on md+) -->
     <div class="order-1 md:order-2 flex justify-center">
@@ -380,7 +392,10 @@ dark:from-gray-900 dark:to-gray-800 rounded-xl shadow-lg grid grid-cols-1 md:gri
     © 2025 Windellson Arellano. All rights reserved.
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
+    AOS.init();
     // Theme toggle
     const toggleBtn = document.getElementById("toggle-theme");
     const html = document.documentElement;
